@@ -102,8 +102,8 @@ app/src/main/java/com/example/weatherforecast/
 1. **克隆仓库**
 
    ```bash
-   git clone https://gitee.com/YOUR_USERNAME/WeatherForecast.git
-   cd WeatherForecast
+   git clone https://github.com/L-zidong/AndroidJWT.git
+   cd AndroidJWT
    ```
 
 2. **用 Android Studio 打开** 项目根目录，等待 Gradle Sync。

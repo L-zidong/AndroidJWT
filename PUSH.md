@@ -16,7 +16,7 @@
 ```powershell
 cd "D:\WORK\mineru-output\移动应用开发-实验2\WeatherForecast"
 
-git remote add origin https://gitee.com/YOUR_USERNAME/WeatherForecast.git
+git remote add origin https://github.com/L-zidong/AndroidJWT.git
 git branch -M main
 git push -u origin main
 ```
