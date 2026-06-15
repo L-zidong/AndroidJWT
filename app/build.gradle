@@ -1,0 +1,53 @@
+plugins {
+    id 'com.android.application'
+}
+
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withInputStream { localProperties.load(it) }
+}
+
+android {
+    namespace 'com.example.weatherforecast'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.weatherforecast"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+        buildConfigField "String", "QWEATHER_API_HOST",
+                "\"${localProperties.getProperty('qweather.api.host', '')}\""
+        buildConfigField "String", "QWEATHER_PROJECT_ID",
+                "\"${localProperties.getProperty('qweather.project.id', '')}\""
+        buildConfigField "String", "QWEATHER_CREDENTIAL_ID",
+                "\"${localProperties.getProperty('qweather.credential.id', '')}\""
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    implementation 'net.i2p.crypto:eddsa:0.3.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+    implementation 'androidx.preference:preference:1.2.1'
+}

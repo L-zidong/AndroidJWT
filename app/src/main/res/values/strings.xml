@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">天气预报</string>
+    <string name="loading">正在加载天气数据…</string>
+    <string name="forecast_title">%1$s · %2$s</string>
+    <string name="forecast_7day">7日预报</string>
+    <string name="detail_title">天气详情</string>
+    <string name="detail_header">%1$s · %2$s</string>
+    <string name="detail_extra">湿度: %1$d%%  |  风力: %2$s</string>
+    <string name="detail_hint">点击左侧某一天查看详情</string>
+    <string name="temp_range_celsius">%1$d\u00B0C ~ %2$d\u00B0C</string>
+    <string name="temp_range_fahrenheit">%1$d\u00B0F ~ %2$d\u00B0F</string>
+    <string name="detail_temps_celsius">最高 %1$d\u00B0C，最低 %2$d\u00B0C</string>
+    <string name="detail_temps_fahrenheit">最高 %1$d\u00B0F，最低 %2$d\u00B0F</string>
+    <string name="share_weather_subject">天气预报分享</string>
+    <string name="share_weather_body">%1$s %2$s\n%3$s\n%4$s\n%5$s\n湿度: %6$d%%\n风力: %7$s</string>
+    <string name="notification_content">%1$s %2$s %3$s</string>
+    <string name="settings_title">设置</string>
+    <string name="data_source_hint">数据来源：%1$s</string>
+    <string name="source_network">Mock 模拟数据</string>
+    <string name="source_qweather">和风天气 API</string>
+    <string name="qweather_day_night">白天 %1$s，夜间 %2$s</string>
+    <string name="source_cache">SQLite 本地缓存</string>
+    <string name="share_weather">分享天气</string>
+    <string name="refreshed">已刷新</string>
+    <string name="no_location_data">暂无位置数据</string>
+    <string name="no_map_app">未找到地图应用</string>
+    <string name="settings_saved">设置已保存</string>
+    <string name="label_city">预报城市</string>
+    <string name="label_unit">温度单位</string>
+    <string name="unit_celsius">摄氏度 (°C)</string>
+    <string name="unit_fahrenheit">华氏度 (°F)</string>
+    <string name="label_notification">开启天气通知（约每 60 秒推送今日简讯，实验演示用）</string>
+    <string name="save_settings">保存</string>
+    <string name="notification_channel_name">天气通知</string>
+    <string name="notification_title">%1$s 今日天气</string>
+    <string name="action_map">Map Location</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_refresh">刷新</string>
+    <string name="action_share">分享</string>
+
+    <string-array name="city_list">
+        <item>长沙</item>
+        <item>北京</item>
+        <item>上海</item>
+    </string-array>
+</resources>
